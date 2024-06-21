@@ -164,3 +164,82 @@ body {
     margin-left: 310px; 
     margin-bottom: 620px;
 }
+
+
+
+.card-secundario {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    margin-bottom: -400px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0354EA;
+    width: 375px;
+    height: 70px;
+    flex-shrink: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item .name {
+    font-weight: bold;
+}
+.item .subname {
+    color: var(--Grayscale-Grayscale-60, #9CA4AB);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 0.06px;
+}
+.item .chart-icon {
+    margin-right: 10px;
+}
+
+.item .value {
+    font-weight: bold;
+}
+.item .subvalue {
+    color: #00C566;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 0.06px;
+}
+
+.btn-volta {
+    fill: var(--Additional-Colors-White, #FEFEFE);
+    opacity: 0.08;
+}
+
+.sub-card-principal {
+    margin-top: -120px;
+}
+
+.card-value {
+    margin-right: 120px !important;
+}
+
+.list-costum {
+    margin-left: 40px;
+    margin-bottom: 70px;
+}
