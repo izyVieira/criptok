@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 375px;
+    height: 812px;
+    background: #0354EA;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1030; 
+}
+
+.navbar .navbar-nav .nav-link {
+    text-decoration: none;
+    color: #333; 
+}
+
+.list-group-item {
+    background-color: #f8f9fa; 
+    border: none; 
+    cursor: pointer; 
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .navbar-nav .nav-link,
+.list-group-item a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.list-group-item a:hover {
+    color: rgb(72, 88, 235); 
+    text-decoration: none; 
+}
+
+
+#sidebar {
+    display: none;
+    z-index: 1020; 
+}
+
+.close-sidebar {
+    font-size: 24px;
+}
+
+.separator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.short-hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ccc; 
+    margin: 0 10px;
+}
+
+.separator p {
+    margin: 0 10px;
+    color: #000; 
+    white-space: nowrap; 
+}
+
+.image-section {
+    background: var(--Main-Colors-Primary, #0354EA);
+    height: 450px;
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white; 
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: 0.12px;
+}
+
+.text-wrapper p {
+    justify-content: center;
+    color: var(--Additional-Colors-White, #FEFEFE);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; 
+    letter-spacing: 0.07px;
+}
+
+.image-section img {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 15px;
+    margin-bottom: -70px;
+}
+.text-section {
+    background: var(--Additional-Colors-White, #ffffff);
+    padding: 2rem;
+    height: 1200px;
+    /* text-align: center; */
+    width: 375px;
+    border-radius: 30px 30px 0px 0px !important;
+
+}
+
+.email {
+    color: #78828A;
+    margin-bottom: 2rem;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.input-email {
+    border-radius: 24px;
+    background: var(--Main-Colors-Secondary, #F6F8FE);
+    display: flex;
+    width: 327px;
+    height: 52px;
+    padding-left: 16px;
+    align-items: center;
+    border: none;
+}
+
+::placeholder {
+    color: #b8bbbd !important;
+    opacity: 1; 
+}
+
+.btn-custom {
+    border-radius: 24px;
+    background: var(--Main-Colors-Primary, #0354EA);
+    width: 327px; 
+    height: 50px; 
+    font-size: 16px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 2rem;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -25px;
+}
+
+.button-group div {
+    margin-bottom: 65px; 
+}
+
+
+.btn-custom .icon {
+    width: 24px; 
+    height: 24px; 
+    margin-right: 10px; 
+    flex-shrink: 0;
+
+}
+
+.btn-google {
+    color: var(--Additional-Colors-Black, #111);
+    background-color: white;
+    border-color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+    letter-spacing: 0.08px;
+}
+
+.btn-apple {
+    color: var(--Additional-Colors-Black, #111);
+    background-color: white;
+    border-color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+    letter-spacing: 0.08px;
+    margin-top: -50px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    color: #6C6C6C;
+}
+
+.text-register {
+    color: var(--Main-Colors-Primary, #0354EA);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}

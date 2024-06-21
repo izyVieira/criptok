@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptok</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/languange/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+                sidebar.style.display = 'block';
+            } else {
+                sidebar.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar navbar-light bg-light w-100 position-absolute">
+            <a class="navbar-brand" href="#">Cryptok</a>
+            <button class="navbar-toggler" type="button" onclick="toggleSidebar()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+        <div id="sidebar" class="position-absolute h-100 w-100 bg-light" style="display: none;">
+            <div class="bg-light h-100 w-100">
+                <button class="close-sidebar btn btn-light position-absolute top-0 right-0 m-2" type="button" onclick="toggleSidebar()">
+                    &times;
+                </button>
+                <ul class="list-group mt-5">
+                    <li class="list-group-item">
+                        <a href="components/pages/onboarding/onboarding-page1.html" data-toggle="collapse" data-target="#subMenu1" aria-expanded="false" aria-controls="subMenu1">
+                            Onboarding
+                        </a>
+                        <div class="collapse" id="subMenu1">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="/components/pages/onboarding/onboarding-page1.html">Onboarding Page 1 </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/onboarding/onboarding-page2.html">Onboarding Page 2 </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/onboarding/onboarding-page3.html">Onboarding Page 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" data-toggle="collapse" data-target="#subMenu2" aria-expanded="false" aria-controls="subMenu2">
+                            Sing & Auth
+                        </a>
+                        <div class="collapse" id="subMenu2">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="/components/pages/sing-in/singin.html">Sign In</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/sing-in/singinEmail.html">Sign In - Email</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/create-acont/createAccount.html">Create Account</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/create-acont/createAccount-page2.html">Create Account - Email</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/confirm/enter-otp.html">Enter OTP</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/forgot-password/forgot-password.html">Forgot Password</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/create-password/create-password.html">Create New Password</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/select-lenguage/select-lenguage.html">Select Languange</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="justify-content-center d-flex align-items-center my-3">
+                <div class="text-account text-center">
+                    <h5 class="title-account">Select your Language</h5>
+                    <p class="p-account">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+
+            <p class="email mx-2 my-3">Languange</p>
+
+            <div class="input-group mb-3">
+                <button 
+                    type="button" 
+                    class="btn btn-primary input-email" 
+                    data-toggle="modal" 
+                    data-target="#languageModal">
+                    
+                    <span>Select</span>
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_29931_1079)">
+                            <path d="M11.9993 16C11.7656 16.0004 11.5392 15.9191 11.3593 15.77L5.3593 10.77C5.15508 10.6002 5.02666 10.3563 5.00228 10.0919C4.9779 9.82747 5.05956 9.56419 5.2293 9.35997C5.39904 9.15575 5.64295 9.02733 5.90738 9.00295C6.1718 8.97857 6.43508 9.06023 6.6393 9.22997L11.9993 13.71L17.3593 9.38997C17.4616 9.3069 17.5793 9.24487 17.7056 9.20744C17.832 9.17001 17.9645 9.15792 18.0955 9.17186C18.2265 9.18579 18.3535 9.22549 18.4691 9.28866C18.5848 9.35184 18.6868 9.43724 18.7693 9.53997C18.8609 9.64279 18.9302 9.76342 18.973 9.89429C19.0158 10.0252 19.0311 10.1635 19.018 10.3005C19.0048 10.4376 18.9635 10.5705 18.8967 10.6908C18.8298 10.8112 18.7387 10.9164 18.6293 11L12.6293 15.83C12.4442 15.9555 12.2224 16.0153 11.9993 16Z" fill="#9CA4AB"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_29931_1079">
+                                <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    
+                </button>
+            </div>
+            
+            <footer>
+                <div>
+                    <a href="/components/pages/create-password/create-password.html" id="continueBtn" class="btn btn-primary btn-custom">
+                        Continue
+                    </a>
+                </div>
+            </footer>
+            
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn btn-link close-modal" data-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" fill="#000"/>
+                        </svg>
+                    </button>
+                    <h5 class="modal-title" id="languageModalLabel">Select your Language</h5>
+                </div>
+                <div class="modal-body">
+                    <button class="btn btn-outline-primary btn-block">English</button>
+                    <button class="btn btn-outline-primary btn-block">Português</button>
+                    <button class="btn btn-outline-primary btn-block">Bahasa Indonesia</button>
+                    <button class="btn btn-outline-primary btn-block">Chineses</button>
+                    <button class="btn btn-outline-primary btn-block">Croatian</button>
+                    <button class="btn btn-outline-primary btn-block">Czech</button>
+                    <button class="btn btn-outline-primary btn-block">Danish</button>
+                    <button class="btn btn-outline-primary btn-block">Filipino</button>
+                    <button class="btn btn-outline-primary btn-block">Finland</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>

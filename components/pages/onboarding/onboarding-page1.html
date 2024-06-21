@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crytok</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/onboarding/style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+                    sidebar.style.display = 'block';
+                } else {
+                    sidebar.style.display = 'none';
+                }
+            }
+        </script>
+    </head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light w-100 position-absolute">
+            <a class="navbar-brand" href="#">Cryptok</a>
+            <button class="navbar-toggler" type="button" onclick="toggleSidebar()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+        <div id="sidebar" class="position-absolute h-100 w-100 bg-light" style="display: none;">
+            <div class="bg-light h-100 w-100">
+                <button class="close-sidebar btn btn-light position-absolute top-0 right-0 m-2" type="button" onclick="toggleSidebar()">
+                    &times;
+                </button>
+                <ul class="list-group mt-5">
+                    <li class="list-group-item">
+                        <a href="components/pages/onboarding/onboarding-page1.html" data-toggle="collapse" data-target="#subMenu1" aria-expanded="false" aria-controls="subMenu1">
+                            Onboarding
+                        </a>
+                        <div class="collapse" id="subMenu1">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="/components/pages/onboarding/onboarding-page1.html">Onboarding Page 1 </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/onboarding/onboarding-page2.html">Onboarding Page 2 </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/onboarding/onboarding-page3.html">Onboarding Page 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" data-toggle="collapse" data-target="#subMenu2" aria-expanded="false" aria-controls="subMenu2">
+                            Sing & Auth
+                        </a>
+                        <div class="collapse" id="subMenu2">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="/components/pages/sing-in/singin.html">Sign In</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/sing-in/singinEmail.html">Sign In - Email</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/create-acont/createAccount.html">Create Account</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/create-acont/createAccount-page2.html">Create Account - Email</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/confirm/enter-otp.html">Enter OTP</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/forgot-password/forgot-password.html">Forgot Password</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/create-password/create-password.html">Create New Password</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/select-lenguage/select-lenguage.html">Select Languange</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="/components/images/celular.png" alt="Crypto Wallet">
+        </div>
+
+        <div class="text-section">
+            <h5 class="card-title">The Most Trusted & Secure Crypto Wallet</h5>
+            <p class="card-text">Semper in cursus magna et eu varius nunc adipiscing. Elementum justo, laoreet id sem.</p>
+            <div class="pagination">
+                <li class="page-item active mx-2"><a class="page-link" href="#"></a></li>
+                <li class="page-item mx-2"><a class="page-link" href="#"></a></li>
+                <li class="page-item mx-2"><a class="page-link" href="#"></a></li>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button class="btn btn-outline-secondary btn-skip">Skip</button>
+            <a href="/components/pages/onboarding/onboarding-page2.html" class="btn btn-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>

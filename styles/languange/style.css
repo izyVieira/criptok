@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 375px;
+    height: 812px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1030; 
+}
+
+.navbar .navbar-nav .nav-link {
+    text-decoration: none;
+    color: #333; 
+}
+
+.list-group-item {
+    background-color: #f8f9fa; 
+    border: none; 
+    cursor: pointer; 
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .navbar-nav .nav-link,
+.list-group-item a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.list-group-item a:hover {
+    color: rgb(72, 88, 235); 
+    text-decoration: none; 
+}
+
+
+#sidebar {
+    display: none;
+    z-index: 1020; 
+}
+
+.close-sidebar {
+    font-size: 24px;
+}
+
+.content {
+    margin-bottom: 255px;
+    position: relative;
+}
+
+.input-email {
+    border-radius: 24px;
+    background: var(--Main-Colors-Secondary, #F6F8FE);
+    display: flex;
+    width: 327px;
+    height: 52px;
+    padding-left: 16px;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    color: #0354EA;
+}
+
+.input-email:hover, .input-email:focus {
+    background: #e2e6ea;
+    outline: none;
+}
+
+::placeholder {
+    color: #b8bbbd !important;
+    opacity: 1;
+}
+
+.text-header .circle-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 35px;
+}
+
+.title-account {
+    color: var(--Additional-Colors-Black, #111);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.12px;
+}
+
+.btn-custom {
+    border-radius: 24px;
+    background: var(--Main-Colors-Primary, #0354EA);
+    width: 327px;
+    height: 50px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.modal-dialog-centered.modal-fullscreen {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    border-radius: 30px;
+    width: 375px;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-email span {
+    margin-right: 10px; 
+    color: grey;
+}
+
+footer {
+    position: absolute;
+    bottom: -360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    color: #6C6C6C;
+}
+
+
+

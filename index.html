@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crytok</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+                sidebar.style.display = 'block';
+            } else {
+                sidebar.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-light bg-light w-100 position-absolute">
+            <a class="navbar-brand" href="#">Cryptok</a>
+            <button class="navbar-toggler" type="button" onclick="toggleSidebar()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+        <div id="sidebar" class="position-absolute h-100 w-100 bg-light" style="display: none;">
+            <div class="bg-light h-100 w-100">
+                <button class="close-sidebar btn btn-light position-absolute top-0 right-0 m-2" type="button" onclick="toggleSidebar()">
+                    &times;
+                </button>
+                <ul class="list-group mt-5">
+                    <li class="list-group-item">
+                        <a href="components/pages/onboarding/onboarding-page1.html" data-toggle="collapse" data-target="#subMenu1" aria-expanded="false" aria-controls="subMenu1">
+                            Onboarding
+                        </a>
+                        <div class="collapse" id="subMenu1">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="/components/pages/onboarding/onboarding-page1.html">Onboarding Page 1 </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/onboarding/onboarding-page2.html">Onboarding Page 2 </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/onboarding/onboarding-page3.html">Onboarding Page 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" data-toggle="collapse" data-target="#subMenu2" aria-expanded="false" aria-controls="subMenu2">
+                            Sing & Auth
+                        </a>
+                        <div class="collapse" id="subMenu2">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="/components/pages/sing-in/singin.html">Sign In</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/sing-in/singinEmail.html">Sign In - Email</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/create-acont/createAccount.html">Create Account</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/create-acont/createAccount-page2.html">Create Account - Email</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/confirm/enter-otp.html">Enter OTP</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/forgot-password/forgot-password.html">Forgot Password</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/create-password/create-password.html">Create New Password</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/select-lenguage/select-lenguage.html">Select Languange</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <img src="/components/images/tela-inical.png" alt="">
+        </div>
+
+        <div class="footer">
+
+            <a href="/components/pages/onboarding/onboarding-page1.html">
+                <div class="loader">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61" fill="none">
+                        <defs>
+                          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#111111;" />
+                            <stop offset="100%" style="stop-color:rgba(17, 17, 17, 0.00);" />
+                          </linearGradient>
+                        </defs>
+                        <path d="M52.1348 42.79C54.833 44.287 55.8426 47.7321 53.8719 50.1065C50.3586 54.3394 45.7234 57.5541 40.4477 59.3486C33.3959 61.7471 25.7039 61.4366 18.8684 58.4773C12.033 55.518 6.54277 50.1217 3.46607 43.3383C0.389376 36.5548 -0.0537855 28.8694 2.22281 21.7773C4.4994 14.6851 9.33293 8.69355 15.783 4.96821C22.233 1.24287 29.8383 0.0502359 37.119 1.62234C44.3998 3.19445 50.8354 7.41886 55.1737 13.4737C58.4193 18.0035 60.3173 23.3154 60.7106 28.8023C60.9311 31.8801 58.105 34.0939 55.0396 33.7408C51.9742 33.3876 49.8605 30.5723 49.3017 27.5376C48.8041 24.8354 47.7169 22.2521 46.0903 19.9819C43.3679 16.1824 39.3294 13.5315 34.7606 12.5449C30.1917 11.5584 25.4193 12.3068 21.3717 14.6445C17.3242 16.9823 14.291 20.7421 12.8624 25.1926C11.4338 29.6431 11.7119 34.4659 13.6426 38.7226C15.5733 42.9794 19.0185 46.3657 23.3079 48.2227C27.5973 50.0797 32.4242 50.2746 36.8494 48.7694C39.4934 47.8701 41.8811 46.4023 43.8585 44.4945C46.0792 42.3521 49.4365 41.293 52.1348 42.79Z" fill="url(#grad)"/>
+                      </svg>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
