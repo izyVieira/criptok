@@ -7,7 +7,7 @@
         <title>Crypto Wallet</title>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/styles/onboarding-page3/style.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script>
@@ -20,78 +20,130 @@
                 }
             }
         </script>
-    </head>
+</head>
 
-    <body>
-        <div class="container">
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light w-100 position-absolute">
+            <a class="navbar-brand" href="#">Cryptok</a>
+            <button class="navbar-toggler" type="button" onclick="toggleSidebar()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
 
-            <nav class="navbar navbar-light bg-light w-100 position-absolute">
-                <a class="navbar-brand" href="#">Cryptok</a>
-                <button class="navbar-toggler" type="button" onclick="toggleSidebar()">
-                    <span class="navbar-toggler-icon"></span>
+        <div id="sidebar" class="position-absolute h-100 w-100 bg-light" style="display: none;">
+            <div class="bg-light h-100 w-100">
+                <button class="close-sidebar btn btn-light position-absolute top-0 right-0 m-2" type="button" onclick="toggleSidebar()">
+                    &times;
                 </button>
-            </nav>
+                <ul class="list-group mt-5">
+                    <li class="list-group-item">
+                        <a href="components/pages/onboarding/onboarding-page1.html" data-toggle="collapse" data-target="#subMenu1" aria-expanded="false" aria-controls="subMenu1">
+                            Onboarding
+                        </a>
+                        <div class="collapse" id="subMenu1">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="/components/pages/onboarding/onboarding-page1.html">Onboarding Page 1 </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/onboarding/onboarding-page2.html">Onboarding Page 2 </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/onboarding/onboarding-page3.html">Onboarding Page 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" data-toggle="collapse" data-target="#subMenu2" aria-expanded="false" aria-controls="subMenu2">
+                            Sing & Auth
+                        </a>
+                        <div class="collapse" id="subMenu2">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="/components/pages/sing-in/singin.html">Sign In</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/sing-in/singinEmail.html">Sign In - Email</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/create-acont/createAccount.html">Create Account</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/create-acont/createAccount-page2.html">Create Account - Email</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/confirm/enter-otp.html">Enter OTP</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/forgot-password/forgot-password.html">Forgot Password</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/create-password/create-password.html">Create New Password</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/select-lenguage/select-lenguage.html">Select Languange</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
 
-            <div id="sidebar" class="position-absolute h-100 w-100 bg-light" style="display: none;">
-                <div class="bg-light h-100 w-100">
-                    <button class="close-sidebar btn btn-light position-absolute top-0 right-0 m-2" type="button" onclick="toggleSidebar()">
-                        &times;
-                    </button>
-                    <ul class="list-group mt-5">
-                        <li class="list-group-item">
-                            <a href="components/pages/onboarding/onboarding-page1.html" data-toggle="collapse" data-target="#subMenu1" aria-expanded="false" aria-controls="subMenu1">
-                                Onboarding
-                            </a>
-                            <div class="collapse" id="subMenu1">
-                                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <a href="#" data-toggle="collapse" data-target="#subMenu3" aria-expanded="false" aria-controls="subMenu3">
+                            Home
+                        </a>
+                        <div class="collapse" id="subMenu3">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="/components/pages/home/home.html">Home</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/home/portofolio-page1.html">Portofolio Page 1</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/home/portofolio-page2.html">Portofolio Page 2</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <a href="#" data-toggle="collapse" data-target="#subMenu4" aria-expanded="false" aria-controls="subMenu3">
+                            Portofolio
+                        </a>
+                        <div class="collapse" id="subMenu4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="/components/pages/home/portofolio-page1.html">Portofolio Page 1</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="/components/pages/home/portofolio-page2.html">Portofolio Page 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <a href="#" data-toggle="collapse" data-target="#subMenu5" aria-expanded="false" aria-controls="subMenu3">
+                            Market
+                        </a>
+                        <div class="collapse" id="subMenu5">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="/components/pages/home/market.html">Market Page 1</a>
                                     <li class="list-group-item">
-                                        <a href="/components/pages/onboarding/onboarding-page1.html">Onboarding Page 1 </a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="/components/pages/onboarding/onboarding-page2.html">Onboarding Page 2 </a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="/components/pages/onboarding/onboarding-page3.html">Onboarding Page 3</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#" data-toggle="collapse" data-target="#subMenu2" aria-expanded="false" aria-controls="subMenu2">
-                                Sing & Auth
-                            </a>
-                            <div class="collapse" id="subMenu2">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <a href="/components/pages/sing-in/singin.html">Sign In</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="/components/pages/sing-in/singinEmail.html">Sign In - Email</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="/components/pages/create-acont/createAccount.html">Create Account</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="/components/pages/create-acont/createAccount-page2.html">Create Account - Email</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="/components/pages/confirm/enter-otp.html">Enter OTP</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="/components/pages/forgot-password/forgot-password.html">Forgot Password</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="/components/pages/create-password/create-password.html">Create New Password</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="/components/pages/select-lenguage/select-lenguage.html">Select Languange</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                                    <a href="/components/pages/home/market-page2.html">Market Page 2</a>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
+        </div>
 
             <div class="image-section">
                 <img src="/components/images/cyrpp.png" alt="Crypto Wallet">

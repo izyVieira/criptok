@@ -11,7 +11,7 @@ body {
 .container {
     width: 375px;
     height: 812px;
-    background: #fff;
+    background: var(--Additional-Colors-White, #FEFEFE);
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -75,14 +75,14 @@ body {
 .short-hr {
     flex: 1;
     border: none;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ccc; 
     margin: 0 10px;
 }
 
 .separator p {
     margin: 0 10px;
-    color: #000;
-    white-space: nowrap;
+    color: #000; 
+    white-space: nowrap; 
 }
 
 .image-section {
@@ -94,50 +94,45 @@ body {
     justify-content: center;
 }
 
-.text-header {
+.text-wrapper {
     display: flex;
-    align-items: center; 
-    color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white; 
     justify-content: center;
-    margin-top: 76px;
+    margin-top: 50px;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 32px; 
     letter-spacing: 0.12px;
 }
 
-.text-header .circle-button {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
+.text-wrapper p {
     justify-content: center;
-    align-items: center;
-    position: absolute;;
-    left: 35px;
-}
-
-
-.text-header .text-sing {
-    /* flex: 1;  */
-    text-align: center;
-    /* margin-left: px; */
+    color: var(--Additional-Colors-White, #FEFEFE);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; 
+    letter-spacing: 0.07px;
 }
 
 .image-section img {
-    width: 80%;
+    width: 90%;
     max-width: 300px;
     border-radius: 15px;
     margin-bottom: -70px;
 }
-
 .text-section {
     background: var(--Additional-Colors-White, #ffffff);
     padding: 2rem;
     height: 1200px;
+    /* text-align: center; */
     width: 375px;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 30px 30px 0px 0px !important;
+
 }
 
 .email {
@@ -165,18 +160,18 @@ body {
 
 ::placeholder {
     color: #b8bbbd !important;
-    opacity: 1;
+    opacity: 1; 
 }
 
 .btn-custom {
     border-radius: 24px;
     background: var(--Main-Colors-Primary, #0354EA);
-    width: 327px;
-    height: 50px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 327px; 
+    height: 50px; 
+    font-size: 16px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     margin-top: 2rem;
 }
 
@@ -188,14 +183,16 @@ body {
 }
 
 .button-group div {
-    margin-bottom: 65px;
+    margin-bottom: 65px; 
 }
 
+
 .btn-custom .icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+    width: 24px; 
+    height: 24px; 
+    margin-right: 10px; 
     flex-shrink: 0;
+
 }
 
 .btn-google {
@@ -205,7 +202,7 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 24px; 
     letter-spacing: 0.08px;
 }
 
@@ -216,12 +213,14 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 24px; 
     letter-spacing: 0.08px;
     margin-top: -50px;
 }
 
 .footer {
+    position: absolute;
+    bottom: 90px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -238,8 +237,136 @@ body {
     letter-spacing: 0.08px;
 }
 
-.eye-ocult {
-    position: absolute;
-    margin-top: -55px;
-    left: 300px;
+.card-principal {
+    width: 375px;
+    height: 427px;
+    border-radius: 0px 0px 24px 24px;
+    background: var(--Grayscale-Grayscale-100, #171725);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: white;
+    margin-top: -320px;
 }
+
+.img-notif {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 2px 3.5px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.card-people {
+    margin-top: 30px;
+}
+
+.img-notif {
+    margin-right: 15px !important;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 2px 3.5px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.text-msg {
+    color: var(--Grayscale-Grayscale-70, #78828A);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    letter-spacing: 0.06px;
+}
+
+
+.button-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    margin: auto;
+}
+
+.button-circle-menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 48px;
+    background: var(--Main-Colors-Primary, #0354EA);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.20);
+}
+
+.button-label {
+    color: white;
+    text-align: center;
+}
+
+.card-secundario {
+    width: 375px;
+    height: 427px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    margin-bottom: -400px;
+    /* background-color: blueviolet; */
+}
+
+.text-see {
+    color: var(--Main-Colors-Primary, #0354EA);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 0.06px;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0354EA;
+    width: 375px;
+    height: 70px;
+    flex-shrink: 0;
+}
+
+.icone-1 {
+    width: 50px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-left: 50px !important;
+    display: flex;
+    position: relative;
+}
+
